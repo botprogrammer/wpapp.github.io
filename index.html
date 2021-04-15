@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      href="https://kit-pro.fontawesome.com/releases/v5.15.3/css/pro.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <title>Home - Portfolio</title>
+  </head>
+  <body>
+    <div class="mainDiv" id="mainDiv">
+      <img src="assets/mainsvg.svg" />
+      <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="/">OurProject</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#loginForm">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#regForm">Register</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#footer">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="mainSec">
+        <p>
+          Hi there, we are
+          <span class="redColor">Pranav, Deval and Jay</span> from 6th sem, with
+          respected enrollment numbers
+          <span class="redColor"
+            >170670107038, 170670107068 and 170670107038.</span
+          >
+          We have made this web template for our
+          <span class="redColor">Web Programming</span> assignment.
+          <br />
+          <br />
+          Here, we have implemanted some basic front-end functionalities of a
+          web template, such as registering a user, logging user in and then
+          redirecting, once a user clicks submit. Starting from the top, we have
+          a simple navigation which navigates user from one section to the
+          another section. Then we have this main section. After that, we have
+          two forms where one is to register a new user, and there is a login
+          form, for users who have already registered. Underneath it, we have a
+          footer section where you can see our further details.
+        </p>
+      </div>
+    </div>
+    <div class="formDiv" id="regForm">
+      <div data-aos="fade-in">
+        <h1 class="text-center">Register yourself here.</h1>
+      </div>
+      <form action="./register.html">
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <div data-aos="fade-right">
+              <label for="inputEmail4">First Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="firstName"
+                placeholder="First Name"
+                required
+              />
+            </div>
+          </div>
+          <div class="form-group col-md-6">
+            <div data-aos="fade-left">
+              <label for="inputPassword4">Last Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="lastName"
+                placeholder="Last Name"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <div data-aos="fade-right">
+              <label for="inputEmail4">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="inputEmail4"
+                placeholder="Email"
+                required
+              />
+            </div>
+          </div>
+          <div class="form-group col-md-6">
+            <div data-aos="fade-left">
+              <label for="inputPassword4">Password</label>
+              <input
+                type="password"
+                class="form-control"
+                id="inputPassword4"
+                placeholder="Password"
+                required
+              />
+            </div>
+          </div>
+        </div>
+        <div data-aos="fade-right">
+          <div class="form-group">
+            <label for="inputAddress">Address</label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputAddress"
+              placeholder="1234 Main St"
+              required
+            />
+          </div>
+        </div>
+        <div class="form-group">
+          <div data-aos="fade-left">
+            <label for="inputAddress2">Address 2</label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputAddress2"
+              placeholder="Apartment, studio, or floor"
+            />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <div data-aos="fade-right">
+              <label for="inputCity">City</label>
+              <input type="text" class="form-control" id="inputCity" required />
+            </div>
+          </div>
+          <div class="form-group col-md-4">
+            <div data-aos="fade-left">
+              <label for="inputState">State</label>
+              <select id="inputState" class="form-control" required>
+                <option value="">None selected</option>
+                <option>Gujarat</option>
+                <option>RCB</option>
+                <option>RR</option>
+                <option>CSK</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group col-md-2">
+            <div data-aos="fade-left">
+              <label for="inputZip">Zip</label>
+              <input type="text" class="form-control" id="inputZip" />
+            </div>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Register Me</button>
+      </form>
+    </div>
+    <div class="loginForm" id="loginForm">
+      <h1 class="text-center">You can log in here!</h1>
+      <form action="login.html">
+        <div class="form-group">
+          <div data-aos="fade-right">
+            <label>Username or Email</label>
+            <input
+              type="email"
+              class="form-control"
+              placeholder="Username or Email"
+              required
+            />
+            <small id="emailHelp" class="form-text text-muted"
+              >enter email or username to continue</small
+            >
+          </div>
+        </div>
+        <div class="form-group">
+          <div data-aos="fade-left">
+            <label>Password</label>
+            <input
+              type="password"
+              class="form-control"
+              placeholder="Password"
+              required
+            />
+          </div>
+        </div>
+        <div class="form-check">
+          <div data-aos="fade-right">
+            <input type="checkbox" class="form-check-input" />
+            <label class="form-check-label">Remember me</label>
+          </div>
+        </div>
+        <a href="login.html"
+          ><button class="btn btn-primary">
+            Login securely &nbsp; <i class="fad fa-shield-check"></i>
+          </button>
+        </a>
+      </form>
+    </div>
+    <footer id="footer">
+      <div class="container-fluid mx-auto">
+        <div class="row justify-content-center top-part">
+          <div class="col-md-6 text-center center-content">
+            <div class="d-flex-inline">
+              <h3 class="footer-heading">
+                Designed and created by <span>Pranav, Deval and Jay</span>
+              </h3>
+            </div>
+            <div class="d-flex-inline">
+              <p>This web template is created with HTML/CSS, bootstrap,</p>
+            </div>
+            <div class="d-flex-inline pt-2">
+              <a href="#mainDiv"><button class="btn-red btn">Home</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/fa.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
